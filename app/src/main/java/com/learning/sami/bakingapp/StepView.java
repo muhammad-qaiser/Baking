@@ -9,8 +9,8 @@ import com.learning.sami.bakingapp.UI.PlayerFragment;
 
 import java.util.Objects;
 
-import static com.learning.sami.bakingapp.AppConstants.RECIPE_STEP_EXTRA;
-import static com.learning.sami.bakingapp.AppConstants.RECIPE_TITLE;
+import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_STEP_EXTRA;
+import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_TITLE;
 
 public class StepView extends AppCompatActivity {
 

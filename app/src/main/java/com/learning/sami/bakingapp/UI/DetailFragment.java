@@ -22,7 +22,8 @@ import com.learning.sami.bakingapp.Utils.ListItemClickListener;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import timber.log.Timber;
-import static com.learning.sami.bakingapp.AppConstants.KEY_SCROLL_STATE;
+
+import static com.learning.sami.bakingapp.Utils.AppConstants.KEY_SCROLL_STATE;
 
 public class DetailFragment extends Fragment implements ListItemClickListener {
 

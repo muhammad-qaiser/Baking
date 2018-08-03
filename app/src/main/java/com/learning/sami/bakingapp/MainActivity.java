@@ -2,6 +2,7 @@ package com.learning.sami.bakingapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -18,6 +19,8 @@ import com.learning.sami.bakingapp.Model.Recipe;
 import com.learning.sami.bakingapp.Utils.ListItemClickListener;
 import com.learning.sami.bakingapp.Utils.RecipeClient;
 import com.learning.sami.bakingapp.Utils.RetrofitClient;
+import com.learning.sami.bakingapp.Widget.RecipeSharedPreference;
+import com.learning.sami.bakingapp.Widget.RecipeWidgetUpdateService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +31,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import timber.log.Timber;
 
-import static com.learning.sami.bakingapp.AppConstants.*;
+import static com.learning.sami.bakingapp.Utils.AppConstants.*;
 
 public class MainActivity extends AppCompatActivity implements ListItemClickListener {
 
@@ -128,6 +131,7 @@ public class MainActivity extends AppCompatActivity implements ListItemClickList
         Intent i = new Intent(this, DetailActivity.class);
         Recipe r = mRecipeList.get(clickedItemIndex);
         i.putExtra(RECIPE_EXTRA, r);
+        RecipeWidgetUpdateService.startActionUpdateListView(getApplicationContext(), r);
         startActivity(i);
 
     }

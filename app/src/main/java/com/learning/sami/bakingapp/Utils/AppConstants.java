@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp;
+package com.learning.sami.bakingapp.Utils;
 
 public class AppConstants {
     public final static String RECIPE_EXTRA = "recipeExtra";
@@ -7,8 +7,10 @@ public class AppConstants {
     public final static int COLUMN_WIDTH = 250;
     public final static String KEY_RECIPE_LAYOUT_STATE = "recipeLayoutState";
     public final static String KEY_RECIPE_LIST_STATE = "recipeListState";
-
     public final static String KEY_SCROLL_STATE = "detailViewScrollState";
+    public final static String KEY_INGREDIENT_SP = "recipeSharedPreference";
+    public static final String UPDATE_LIST_VIEW = "updateAppWidgetList";
+
 
 
 

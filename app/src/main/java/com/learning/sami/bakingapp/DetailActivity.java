@@ -14,9 +14,9 @@ import com.learning.sami.bakingapp.Utils.ListItemClickListener;
 
 import timber.log.Timber;
 
-import static com.learning.sami.bakingapp.AppConstants.RECIPE_EXTRA;
-import static com.learning.sami.bakingapp.AppConstants.RECIPE_STEP_EXTRA;
-import static com.learning.sami.bakingapp.AppConstants.RECIPE_TITLE;
+import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_EXTRA;
+import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_STEP_EXTRA;
+import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_TITLE;
 
 public class DetailActivity extends AppCompatActivity implements ListItemClickListener {
 
