@@ -15,14 +15,13 @@
             android:id="@+id/tvIngredientName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="left"
+            android:gravity="start"
             android:layout_weight="1"/>
 
         <TextView
             android:id="@+id/tvIngredientAmount"
             android:layout_width="wrap_content"
-            android:text="weight"
-            android:gravity="right"
+            android:gravity="end"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             />

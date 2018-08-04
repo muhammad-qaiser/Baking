@@ -29,7 +29,6 @@ import com.learning.sami.bakingapp.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import okhttp3.internal.Util;
 
 import static com.learning.sami.bakingapp.utils.AppConstants.PLAYER_POSITION_KEY;
 import static com.learning.sami.bakingapp.utils.AppConstants.PLAY_WHEN_READY;
