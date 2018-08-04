@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import com.learning.sami.bakingapp.model.RecipeSteps;
 import com.learning.sami.bakingapp.ui.PlayerFragment;
-
 import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_STEP_EXTRA;
 import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_TITLE;
 
@@ -18,7 +17,6 @@ public class StepView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_step_view);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         RecipeSteps step = getIntent().getParcelableExtra(RECIPE_STEP_EXTRA);
         PlayerFragment playerFragment = new PlayerFragment();
         playerFragment.setRecipeStep(step);
@@ -37,7 +35,6 @@ public class StepView extends AppCompatActivity {
         }
         String title = getIntent().getStringExtra(RECIPE_TITLE);
         setTitle(title);
-
     }
 
     @Override

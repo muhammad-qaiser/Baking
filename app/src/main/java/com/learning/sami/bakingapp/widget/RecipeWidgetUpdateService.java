@@ -6,10 +6,8 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.Nullable;
-
 import com.learning.sami.bakingapp.model.Recipe;
 import com.learning.sami.bakingapp.R;
-
 import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_EXTRA;
 import static com.learning.sami.bakingapp.utils.AppConstants.UPDATE_LIST_VIEW;
 

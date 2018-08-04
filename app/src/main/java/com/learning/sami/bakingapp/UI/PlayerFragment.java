@@ -1,6 +1,5 @@
 package com.learning.sami.bakingapp.ui;
 
-
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.content.res.Configuration;
@@ -12,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.ExoPlayerFactory;
 import com.google.android.exoplayer2.LoadControl;
@@ -26,15 +24,12 @@ import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 import com.learning.sami.bakingapp.DetailActivity;
 import com.learning.sami.bakingapp.model.RecipeSteps;
 import com.learning.sami.bakingapp.R;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
 import static com.learning.sami.bakingapp.utils.AppConstants.PLAYER_POSITION_KEY;
 import static com.learning.sami.bakingapp.utils.AppConstants.PLAY_WHEN_READY;
 
 public class PlayerFragment extends Fragment {
-
     @BindView(R.id.pvRecipeStep)
     PlayerView mpvStep;
     @BindView(R.id.tvDescription)
@@ -44,10 +39,7 @@ public class PlayerFragment extends Fragment {
     private static long mPlayerPosition;
     private static boolean mPlayerRunning;
 
-    public PlayerFragment()
-    {
-
-    }
+    public PlayerFragment() { }
 
     @Nullable
     @Override
@@ -64,7 +56,6 @@ public class PlayerFragment extends Fragment {
             params.height = params.MATCH_PARENT;
             mpvStep.setLayoutParams(params);
             mtvDescription.setVisibility(View.INVISIBLE);
-
         }
         else{
             mtvDescription.setText(mRecipeStep.getmDescription());
@@ -131,8 +122,6 @@ public class PlayerFragment extends Fragment {
         super.onDestroy();
         //releasePlayer();
     }
-
-
 
     @Override
     public void onStop() {

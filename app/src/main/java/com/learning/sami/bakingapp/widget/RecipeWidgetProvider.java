@@ -7,16 +7,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RemoteViews;
-
 import com.learning.sami.bakingapp.DetailActivity;
 import com.learning.sami.bakingapp.model.Recipe;
 import com.learning.sami.bakingapp.R;
-
 import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_EXTRA;
 
-/**
- * Implementation of App Widget functionality.
- */
 public class RecipeWidgetProvider extends AppWidgetProvider {
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {

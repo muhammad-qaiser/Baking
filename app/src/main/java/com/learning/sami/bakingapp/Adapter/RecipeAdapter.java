@@ -12,9 +12,7 @@ import com.learning.sami.bakingapp.model.Recipe;
 import com.learning.sami.bakingapp.R;
 import com.learning.sami.bakingapp.utils.ListItemClickListener;
 import com.squareup.picasso.Picasso;
-
 import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import timber.log.Timber;
@@ -83,7 +81,6 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
                         .placeholder(R.drawable.baking)
                         .into(mBakingCover);
             }
-
         }
 
         @Override

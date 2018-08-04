@@ -6,15 +6,12 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-
 import com.learning.sami.bakingapp.model.Recipe;
 import com.learning.sami.bakingapp.model.RecipeSteps;
 import com.learning.sami.bakingapp.ui.DetailFragment;
 import com.learning.sami.bakingapp.ui.PlayerFragment;
 import com.learning.sami.bakingapp.utils.ListItemClickListener;
-
 import timber.log.Timber;
-
 import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_EXTRA;
 import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_STEP_EXTRA;
 import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_TITLE;

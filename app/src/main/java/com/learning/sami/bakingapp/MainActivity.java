@@ -16,7 +16,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
-
 import com.learning.sami.bakingapp.adapter.RecipeAdapter;
 import com.learning.sami.bakingapp.idlingResource.SimpleIdlingResource;
 import com.learning.sami.bakingapp.model.Recipe;
@@ -24,7 +23,6 @@ import com.learning.sami.bakingapp.utils.ListItemClickListener;
 import com.learning.sami.bakingapp.utils.RecipeClient;
 import com.learning.sami.bakingapp.utils.RetrofitClient;
 import com.learning.sami.bakingapp.widget.RecipeWidgetUpdateService;
-
 import java.util.ArrayList;
 import java.util.List;
 import butterknife.BindView;
@@ -122,7 +120,6 @@ public class MainActivity extends AppCompatActivity implements ListItemClickList
                     mRecipeAdapter.notifyDataSetChanged();
                     Timber.d("Recipe Adapter Set");
                 }
-
                 @Override
                 public void onFailure(Call<ArrayList<Recipe>> call, Throwable t) {
                     Timber.d("Failed to set Recipe Adapter ");
@@ -140,7 +137,6 @@ public class MainActivity extends AppCompatActivity implements ListItemClickList
         i.putExtra(RECIPE_EXTRA, r);
         RecipeWidgetUpdateService.startActionUpdateListView(getApplicationContext(), r);
         startActivity(i);
-
     }
 
     @VisibleForTesting

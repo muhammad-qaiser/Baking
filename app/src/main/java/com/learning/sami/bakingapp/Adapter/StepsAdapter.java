@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.learning.sami.bakingapp.model.RecipeSteps;
 import com.learning.sami.bakingapp.R;
 import com.learning.sami.bakingapp.utils.ListItemClickListener;
-
 import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
