@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.Adapter;
+package com.learning.sami.bakingapp.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.learning.sami.bakingapp.Model.Recipe;
+import com.learning.sami.bakingapp.model.Recipe;
 import com.learning.sami.bakingapp.R;
-import com.learning.sami.bakingapp.Utils.ListItemClickListener;
+import com.learning.sami.bakingapp.utils.ListItemClickListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

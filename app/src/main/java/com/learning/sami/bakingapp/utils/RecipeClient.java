@@ -1,6 +1,6 @@
-package com.learning.sami.bakingapp.Utils;
+package com.learning.sami.bakingapp.utils;
 
-import com.learning.sami.bakingapp.Model.Recipe;
+import com.learning.sami.bakingapp.model.Recipe;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.Utils;
+package com.learning.sami.bakingapp.utils;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;

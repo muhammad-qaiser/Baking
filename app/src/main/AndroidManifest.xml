@@ -15,14 +15,20 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailActivity" />
-        <activity android:name=".StepView"></activity>
+        <activity android:name=".DetailActivity"
+            android:parentActivityName=".MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".StepView">
+        </activity>
 
-        <receiver android:name=".Widget.RecipeWidgetProvider">
+        <receiver android:name=".widget.RecipeWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -31,9 +37,9 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/recipe_widget_provider_info" />
         </receiver>
-        <service android:name=".Widget.ListViewWidgetService"
+        <service android:name=".widget.ListViewWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS"/>
-        <service android:name=".Widget.RecipeWidgetUpdateService" />
+        <service android:name=".widget.RecipeWidgetUpdateService" />
     </application>
 
 </manifest>

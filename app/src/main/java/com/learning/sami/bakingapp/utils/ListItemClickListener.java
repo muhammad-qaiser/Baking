@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.Utils;
+package com.learning.sami.bakingapp.utils;
 
 
 public interface ListItemClickListener{

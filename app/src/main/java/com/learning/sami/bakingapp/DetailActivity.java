@@ -2,21 +2,22 @@ package com.learning.sami.bakingapp;
 
 import android.content.Intent;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.learning.sami.bakingapp.Model.Recipe;
-import com.learning.sami.bakingapp.Model.RecipeSteps;
-import com.learning.sami.bakingapp.UI.DetailFragment;
-import com.learning.sami.bakingapp.UI.PlayerFragment;
-import com.learning.sami.bakingapp.Utils.ListItemClickListener;
+import com.learning.sami.bakingapp.model.Recipe;
+import com.learning.sami.bakingapp.model.RecipeSteps;
+import com.learning.sami.bakingapp.ui.DetailFragment;
+import com.learning.sami.bakingapp.ui.PlayerFragment;
+import com.learning.sami.bakingapp.utils.ListItemClickListener;
 
 import timber.log.Timber;
 
-import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_EXTRA;
-import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_STEP_EXTRA;
-import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_TITLE;
+import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_EXTRA;
+import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_STEP_EXTRA;
+import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_TITLE;
 
 public class DetailActivity extends AppCompatActivity implements ListItemClickListener {
 
@@ -65,8 +66,8 @@ public class DetailActivity extends AppCompatActivity implements ListItemClickLi
         switch (item.getItemId())
         {
             case (android.R.id.home):
-                finish();
-                break;
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.Widget;
+package com.learning.sami.bakingapp.widget;
 
 import android.app.IntentService;
 import android.appwidget.AppWidgetManager;
@@ -7,11 +7,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.Nullable;
 
-import com.learning.sami.bakingapp.Model.Recipe;
+import com.learning.sami.bakingapp.model.Recipe;
 import com.learning.sami.bakingapp.R;
 
-import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_EXTRA;
-import static com.learning.sami.bakingapp.Utils.AppConstants.UPDATE_LIST_VIEW;
+import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_EXTRA;
+import static com.learning.sami.bakingapp.utils.AppConstants.UPDATE_LIST_VIEW;
 
 public class RecipeWidgetUpdateService extends IntentService {
 

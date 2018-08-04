@@ -1,11 +1,11 @@
-package com.learning.sami.bakingapp.Widget;
+package com.learning.sami.bakingapp.widget;
 
 import android.content.Context;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
-import com.learning.sami.bakingapp.Model.Recipe;
-import com.learning.sami.bakingapp.Model.RecipeIngredients;
+import com.learning.sami.bakingapp.model.Recipe;
+import com.learning.sami.bakingapp.model.RecipeIngredients;
 import com.learning.sami.bakingapp.R;
 
 import java.util.ArrayList;

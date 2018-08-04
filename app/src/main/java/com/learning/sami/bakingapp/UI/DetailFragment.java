@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.UI;
+package com.learning.sami.bakingapp.ui;
 
 
 import android.content.Context;
@@ -13,17 +13,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
 
-import com.learning.sami.bakingapp.Adapter.IngredientListAdapter;
-import com.learning.sami.bakingapp.Adapter.StepsAdapter;
-import com.learning.sami.bakingapp.Model.Recipe;
+import com.learning.sami.bakingapp.adapter.IngredientListAdapter;
+import com.learning.sami.bakingapp.adapter.StepsAdapter;
+import com.learning.sami.bakingapp.model.Recipe;
 import com.learning.sami.bakingapp.R;
-import com.learning.sami.bakingapp.Utils.ListItemClickListener;
+import com.learning.sami.bakingapp.utils.ListItemClickListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import timber.log.Timber;
 
-import static com.learning.sami.bakingapp.Utils.AppConstants.KEY_SCROLL_STATE;
+import static com.learning.sami.bakingapp.utils.AppConstants.KEY_SCROLL_STATE;
 
 public class DetailFragment extends Fragment implements ListItemClickListener {
 

@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.Widget;
+package com.learning.sami.bakingapp.widget;
 
 import android.content.Intent;
 import android.widget.RemoteViewsService;

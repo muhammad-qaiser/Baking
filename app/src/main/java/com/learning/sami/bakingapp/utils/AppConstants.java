@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.Utils;
+package com.learning.sami.bakingapp.utils;
 
 public class AppConstants {
     public final static String RECIPE_EXTRA = "recipeExtra";
@@ -10,6 +10,10 @@ public class AppConstants {
     public final static String KEY_SCROLL_STATE = "detailViewScrollState";
     public final static String KEY_INGREDIENT_SP = "recipeSharedPreference";
     public static final String UPDATE_LIST_VIEW = "updateAppWidgetList";
+    public static final String PLAYER_POSITION_KEY = "exoPlayerPositionKey";
+    public static final String PLAY_WHEN_READY = "exoPlayerPlatWhenReady";
+
+
 
 
 

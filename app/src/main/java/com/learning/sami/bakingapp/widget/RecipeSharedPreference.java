@@ -1,13 +1,13 @@
-package com.learning.sami.bakingapp.Widget;
+package com.learning.sami.bakingapp.widget;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 import com.google.gson.Gson;
-import com.learning.sami.bakingapp.Model.Recipe;
+import com.learning.sami.bakingapp.model.Recipe;
 
-import static com.learning.sami.bakingapp.Utils.AppConstants.KEY_INGREDIENT_SP;
+import static com.learning.sami.bakingapp.utils.AppConstants.KEY_INGREDIENT_SP;
 
 public class RecipeSharedPreference {
 

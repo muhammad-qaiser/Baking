@@ -17,13 +17,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 
-import com.learning.sami.bakingapp.Adapter.RecipeAdapter;
-import com.learning.sami.bakingapp.IdlingResource.SimpleIdlingResource;
-import com.learning.sami.bakingapp.Model.Recipe;
-import com.learning.sami.bakingapp.Utils.ListItemClickListener;
-import com.learning.sami.bakingapp.Utils.RecipeClient;
-import com.learning.sami.bakingapp.Utils.RetrofitClient;
-import com.learning.sami.bakingapp.Widget.RecipeWidgetUpdateService;
+import com.learning.sami.bakingapp.adapter.RecipeAdapter;
+import com.learning.sami.bakingapp.idlingResource.SimpleIdlingResource;
+import com.learning.sami.bakingapp.model.Recipe;
+import com.learning.sami.bakingapp.utils.ListItemClickListener;
+import com.learning.sami.bakingapp.utils.RecipeClient;
+import com.learning.sami.bakingapp.utils.RetrofitClient;
+import com.learning.sami.bakingapp.widget.RecipeWidgetUpdateService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import timber.log.Timber;
 
-import static com.learning.sami.bakingapp.Utils.AppConstants.*;
+import static com.learning.sami.bakingapp.utils.AppConstants.*;
 
 public class MainActivity extends AppCompatActivity implements ListItemClickListener {
 

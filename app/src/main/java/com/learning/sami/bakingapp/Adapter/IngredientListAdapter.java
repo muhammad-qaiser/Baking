@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.Adapter;
+package com.learning.sami.bakingapp.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.learning.sami.bakingapp.Model.RecipeIngredients;
+import com.learning.sami.bakingapp.model.RecipeIngredients;
 import com.learning.sami.bakingapp.R;
 import java.util.List;
 

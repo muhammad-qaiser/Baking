@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.Widget;
+package com.learning.sami.bakingapp.widget;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -9,10 +9,10 @@ import android.os.Bundle;
 import android.widget.RemoteViews;
 
 import com.learning.sami.bakingapp.DetailActivity;
-import com.learning.sami.bakingapp.Model.Recipe;
+import com.learning.sami.bakingapp.model.Recipe;
 import com.learning.sami.bakingapp.R;
 
-import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_EXTRA;
+import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_EXTRA;
 
 /**
  * Implementation of App Widget functionality.

@@ -4,13 +4,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import com.learning.sami.bakingapp.Model.RecipeSteps;
-import com.learning.sami.bakingapp.UI.PlayerFragment;
+import com.learning.sami.bakingapp.model.RecipeSteps;
+import com.learning.sami.bakingapp.ui.PlayerFragment;
 
-import java.util.Objects;
-
-import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_STEP_EXTRA;
-import static com.learning.sami.bakingapp.Utils.AppConstants.RECIPE_TITLE;
+import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_STEP_EXTRA;
+import static com.learning.sami.bakingapp.utils.AppConstants.RECIPE_TITLE;
 
 public class StepView extends AppCompatActivity {
 
@@ -19,11 +17,12 @@ public class StepView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_step_view);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         RecipeSteps step = getIntent().getParcelableExtra(RECIPE_STEP_EXTRA);
         PlayerFragment playerFragment = new PlayerFragment();
         playerFragment.setRecipeStep(step);
+        playerFragment.resetPlayerPos();
         FragmentManager fragmentManager = getSupportFragmentManager();
         if(savedInstanceState == null) {
             fragmentManager.beginTransaction()

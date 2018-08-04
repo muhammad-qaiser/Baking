@@ -1,4 +1,4 @@
-package com.learning.sami.bakingapp.Model;
+package com.learning.sami.bakingapp.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
