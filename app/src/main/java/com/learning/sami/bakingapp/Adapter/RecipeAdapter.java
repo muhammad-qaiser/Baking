@@ -30,8 +30,10 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
     }
     public void setRecipeList(List<Recipe> recipe)
     {
-        mRecipeList = recipe;
-        mNumberItems = recipe.size();
+        if(recipe!= null) {
+            mRecipeList = recipe;
+            mNumberItems = recipe.size();
+        }
     }
 
     @NonNull

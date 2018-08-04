@@ -2,11 +2,14 @@ package com.learning.sami.bakingapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Parcelable;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.annotation.VisibleForTesting;
+import android.support.test.espresso.IdlingResource;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -15,11 +18,11 @@ import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 
 import com.learning.sami.bakingapp.Adapter.RecipeAdapter;
+import com.learning.sami.bakingapp.IdlingResource.SimpleIdlingResource;
 import com.learning.sami.bakingapp.Model.Recipe;
 import com.learning.sami.bakingapp.Utils.ListItemClickListener;
 import com.learning.sami.bakingapp.Utils.RecipeClient;
 import com.learning.sami.bakingapp.Utils.RetrofitClient;
-import com.learning.sami.bakingapp.Widget.RecipeSharedPreference;
 import com.learning.sami.bakingapp.Widget.RecipeWidgetUpdateService;
 
 import java.util.ArrayList;
@@ -37,15 +40,19 @@ public class MainActivity extends AppCompatActivity implements ListItemClickList
 
     @BindView(R.id.rvRecipe) RecyclerView mRecipesRV;
     private static LinearLayoutManager mLayoutManager;
-    private List<Recipe> mRecipeList;
+    private static List<Recipe> mRecipeList;
     private RecipeAdapter mRecipeAdapter;
     private static Parcelable mListState;
+    @Nullable
+    private SimpleIdlingResource mIdlingResource;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Timber.plant(new Timber.DebugTree());
         ButterKnife.bind(this);
+        getIdlingResource();
         if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
             mLayoutManager = new GridLayoutManager(this
                     ,calculateNoOfColumns(this));
@@ -134,5 +141,14 @@ public class MainActivity extends AppCompatActivity implements ListItemClickList
         RecipeWidgetUpdateService.startActionUpdateListView(getApplicationContext(), r);
         startActivity(i);
 
+    }
+
+    @VisibleForTesting
+    @NonNull
+    public IdlingResource getIdlingResource() {
+        if (mIdlingResource == null) {
+            mIdlingResource = new SimpleIdlingResource();
+        }
+        return mIdlingResource;
     }
 }
